@@ -19,10 +19,13 @@
 		1FA725452795F50300B8D174 /* LineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA725442795F50300B8D174 /* LineGraph.swift */; };
 		1FA725492795F58600B8D174 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 1FA725482795F58600B8D174 /* Charts */; };
 		1FA7255127960ADD00B8D174 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255027960ADD00B8D174 /* Exercise.swift */; };
-		1FA7255327960DEE00B8D174 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255227960DEE00B8D174 /* TableViewController.swift */; };
+		1FA7255327960DEE00B8D174 /* TipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255227960DEE00B8D174 /* TipTableViewController.swift */; };
 		1FA7255627960F1B00B8D174 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255527960F1B00B8D174 /* Tip.swift */; };
 		1FA72558279614A600B8D174 /* WorkoutCreator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA72557279614A600B8D174 /* WorkoutCreator.storyboard */; };
 		1FA7255A279627A800B8D174 /* WorkoutEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA72559279627A800B8D174 /* WorkoutEditor.storyboard */; };
+		1FA7255E2797279500B8D174 /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255D2797279500B8D174 /* AddWeightViewController.swift */; };
+		1FA72562279736B800B8D174 /* TipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA72561279736B800B8D174 /* TipManager.swift */; };
+		1FA72564279743A800B8D174 /* TipTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA72563279743A800B8D174 /* TipTextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +42,13 @@
 		1FA725402795F38600B8D174 /* WorkoutViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorkoutViewer.storyboard; sourceTree = "<group>"; };
 		1FA725442795F50300B8D174 /* LineGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraph.swift; sourceTree = "<group>"; };
 		1FA7255027960ADD00B8D174 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		1FA7255227960DEE00B8D174 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1FA7255227960DEE00B8D174 /* TipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTableViewController.swift; sourceTree = "<group>"; };
 		1FA7255527960F1B00B8D174 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		1FA72557279614A600B8D174 /* WorkoutCreator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorkoutCreator.storyboard; sourceTree = "<group>"; };
 		1FA72559279627A800B8D174 /* WorkoutEditor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorkoutEditor.storyboard; sourceTree = "<group>"; };
+		1FA7255D2797279500B8D174 /* AddWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightViewController.swift; sourceTree = "<group>"; };
+		1FA72561279736B800B8D174 /* TipManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipManager.swift; sourceTree = "<group>"; };
+		1FA72563279743A800B8D174 /* TipTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +111,10 @@
 		1FA725432795F40100B8D174 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1FA7255227960DEE00B8D174 /* TableViewController.swift */,
+				1FA7255227960DEE00B8D174 /* TipTableViewController.swift */,
+				1FA72563279743A800B8D174 /* TipTextViewController.swift */,
 				1FA7252B2795D8B200B8D174 /* ViewController.swift */,
+				1FA7255D2797279500B8D174 /* AddWeightViewController.swift */,
 				1FA725442795F50300B8D174 /* LineGraph.swift */,
 			);
 			path = Controllers;
@@ -124,6 +132,7 @@
 			children = (
 				1FA7255027960ADD00B8D174 /* Exercise.swift */,
 				1FA7255527960F1B00B8D174 /* Tip.swift */,
+				1FA72561279736B800B8D174 /* TipManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,13 +219,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA72562279736B800B8D174 /* TipManager.swift in Sources */,
+				1FA7255E2797279500B8D174 /* AddWeightViewController.swift in Sources */,
 				1FA725452795F50300B8D174 /* LineGraph.swift in Sources */,
-				1FA7255327960DEE00B8D174 /* TableViewController.swift in Sources */,
+				1FA7255327960DEE00B8D174 /* TipTableViewController.swift in Sources */,
 				1FA7252C2795D8B200B8D174 /* ViewController.swift in Sources */,
 				1FA7255627960F1B00B8D174 /* Tip.swift in Sources */,
 				1FA725282795D8B200B8D174 /* AppDelegate.swift in Sources */,
 				1FA7255127960ADD00B8D174 /* Exercise.swift in Sources */,
 				1FA7252A2795D8B200B8D174 /* SceneDelegate.swift in Sources */,
+				1FA72564279743A800B8D174 /* TipTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,6 @@ import Foundation
 
 struct Tip {
     let title: String
+    let text: String
     let timeToRead: String
-    let wasRead: Bool
 }

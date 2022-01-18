@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZPO-7p-G6A">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wnz-3p-iU1" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="50" y="244" width="314" height="219"/>
+                                <rect key="frame" x="50" y="288" width="314" height="175"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJp-DM-W2H">
@@ -41,17 +41,17 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OJp-DM-W2H" secondAttribute="trailing" constant="150" id="xkG-He-MAH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tracking" image="chart.line.uptrend.xyaxis" catalog="system" id="XNO-G8-txF"/>
+                    <navigationItem key="navigationItem" id="TIc-Ss-P9V"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="98"/>
+            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Weight View Controller-->
         <scene sceneID="Iy2-hs-XZW">
             <objects>
-                <viewController id="NCs-ec-Ckx" customClass="ViewController" customModule="WorkinOut" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NCs-ec-Ckx" customClass="AddWeightViewController" customModule="WorkinOut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SsU-nu-yhN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +85,9 @@
                                 <rect key="frame" x="69" y="665" width="68.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="NCs-ec-Ckx" eventType="touchUpInside" id="vsr-hr-Q0v"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="l7t-vd-FRm">
                                 <rect key="frame" x="193" y="81" width="186" height="31"/>
@@ -93,6 +96,9 @@
                                 <rect key="frame" x="265" y="664" width="80" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="NCs-ec-Ckx" eventType="touchUpInside" id="xtk-V9-1PN"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfq-Zc-cJ9">
                                 <rect key="frame" x="35" y="262" width="344" height="363"/>
@@ -125,10 +131,34 @@
                             <constraint firstItem="xsK-82-9uD" firstAttribute="top" secondItem="dfq-Zc-cJ9" secondAttribute="bottom" constant="40" id="xQR-CI-5Bv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="weightDatePicker" destination="l7t-vd-FRm" id="4pE-MC-flS"/>
+                        <outlet property="weightLottieView" destination="dfq-Zc-cJ9" id="ogd-43-cHg"/>
+                        <outlet property="weightTextField" destination="gV0-Gf-k1p" id="yM3-AT-Cz3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7J-ll-f8U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="813.61607142857144"/>
+            <point key="canvasLocation" x="929" y="824"/>
+        </scene>
+        <!--Tracking-->
+        <scene sceneID="Gag-TM-nIH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZPO-7p-G6A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tracking" image="chart.line.uptrend.xyaxis" catalog="system" id="XNO-G8-txF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JIP-ta-KMB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="7Bk-VP-WCD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1C9-g6-9KL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
