@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F084FBD279776590029687E /* WorkoutCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F084FBC279776590029687E /* WorkoutCreatorViewController.swift */; };
+		1F084FBF2797ACB40029687E /* WorkoutLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F084FBE2797ACB40029687E /* WorkoutLottie.json */; };
 		1FA725282795D8B200B8D174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA725272795D8B200B8D174 /* AppDelegate.swift */; };
 		1FA7252A2795D8B200B8D174 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA725292795D8B200B8D174 /* SceneDelegate.swift */; };
-		1FA7252C2795D8B200B8D174 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7252B2795D8B200B8D174 /* ViewController.swift */; };
 		1FA7252F2795D8B200B8D174 /* Credits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7252D2795D8B200B8D174 /* Credits.storyboard */; };
 		1FA725312795D8B300B8D174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FA725302795D8B300B8D174 /* Assets.xcassets */; };
 		1FA725342795D8B300B8D174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA725322795D8B300B8D174 /* LaunchScreen.storyboard */; };
@@ -26,13 +27,16 @@
 		1FA7255E2797279500B8D174 /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255D2797279500B8D174 /* AddWeightViewController.swift */; };
 		1FA72562279736B800B8D174 /* TipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA72561279736B800B8D174 /* TipManager.swift */; };
 		1FA72564279743A800B8D174 /* TipTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA72563279743A800B8D174 /* TipTextViewController.swift */; };
+		1FA7256727975D1900B8D174 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1FA7256627975D1900B8D174 /* Lottie */; };
+		1FA725692797627F00B8D174 /* TrackingLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FA725682797627F00B8D174 /* TrackingLottie.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F084FBC279776590029687E /* WorkoutCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCreatorViewController.swift; sourceTree = "<group>"; };
+		1F084FBE2797ACB40029687E /* WorkoutLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = WorkoutLottie.json; path = WorkinOut/WorkoutLottie.json; sourceTree = "<group>"; };
 		1FA725242795D8B200B8D174 /* WorkinOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkinOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA725272795D8B200B8D174 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FA725292795D8B200B8D174 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FA7252B2795D8B200B8D174 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FA7252E2795D8B200B8D174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Credits.storyboard; sourceTree = "<group>"; };
 		1FA725302795D8B300B8D174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FA725332795D8B300B8D174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 		1FA7255D2797279500B8D174 /* AddWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightViewController.swift; sourceTree = "<group>"; };
 		1FA72561279736B800B8D174 /* TipManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipManager.swift; sourceTree = "<group>"; };
 		1FA72563279743A800B8D174 /* TipTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTextViewController.swift; sourceTree = "<group>"; };
+		1FA725682797627F00B8D174 /* TrackingLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TrackingLottie.json; path = WorkinOut/TrackingLottie.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FA725492795F58600B8D174 /* Charts in Frameworks */,
+				1FA7256727975D1900B8D174 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +119,7 @@
 			children = (
 				1FA7255227960DEE00B8D174 /* TipTableViewController.swift */,
 				1FA72563279743A800B8D174 /* TipTextViewController.swift */,
-				1FA7252B2795D8B200B8D174 /* ViewController.swift */,
+				1F084FBC279776590029687E /* WorkoutCreatorViewController.swift */,
 				1FA7255D2797279500B8D174 /* AddWeightViewController.swift */,
 				1FA725442795F50300B8D174 /* LineGraph.swift */,
 			);
@@ -123,6 +129,8 @@
 		1FA725462795F53500B8D174 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FA725682797627F00B8D174 /* TrackingLottie.json */,
+				1F084FBE2797ACB40029687E /* WorkoutLottie.json */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 			name = WorkinOut;
 			packageProductDependencies = (
 				1FA725482795F58600B8D174 /* Charts */,
+				1FA7256627975D1900B8D174 /* Lottie */,
 			);
 			productName = WorkinOut;
 			productReference = 1FA725242795D8B200B8D174 /* WorkinOut.app */;
@@ -186,6 +195,7 @@
 			mainGroup = 1FA7251B2795D8B200B8D174;
 			packageReferences = (
 				1FA725472795F58600B8D174 /* XCRemoteSwiftPackageReference "Charts" */,
+				1FA7256527975D1900B8D174 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 1FA725252795D8B200B8D174 /* Products */;
 			projectDirPath = "";
@@ -205,9 +215,11 @@
 				1FA7255A279627A800B8D174 /* WorkoutEditor.storyboard in Resources */,
 				1FA725342795D8B300B8D174 /* LaunchScreen.storyboard in Resources */,
 				1FA7253D2795D91700B8D174 /* Tracking.storyboard in Resources */,
+				1FA725692797627F00B8D174 /* TrackingLottie.json in Resources */,
 				1FA725312795D8B300B8D174 /* Assets.xcassets in Resources */,
 				1FA7253F2795DF0A00B8D174 /* Main.storyboard in Resources */,
 				1FA725412795F38600B8D174 /* WorkoutViewer.storyboard in Resources */,
+				1F084FBF2797ACB40029687E /* WorkoutLottie.json in Resources */,
 				1FA7252F2795D8B200B8D174 /* Credits.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,10 +235,10 @@
 				1FA7255E2797279500B8D174 /* AddWeightViewController.swift in Sources */,
 				1FA725452795F50300B8D174 /* LineGraph.swift in Sources */,
 				1FA7255327960DEE00B8D174 /* TipTableViewController.swift in Sources */,
-				1FA7252C2795D8B200B8D174 /* ViewController.swift in Sources */,
 				1FA7255627960F1B00B8D174 /* Tip.swift in Sources */,
 				1FA725282795D8B200B8D174 /* AppDelegate.swift in Sources */,
 				1FA7255127960ADD00B8D174 /* Exercise.swift in Sources */,
+				1F084FBD279776590029687E /* WorkoutCreatorViewController.swift in Sources */,
 				1FA7252A2795D8B200B8D174 /* SceneDelegate.swift in Sources */,
 				1FA72564279743A800B8D174 /* TipTextViewController.swift in Sources */,
 			);
@@ -458,6 +470,14 @@
 				kind = branch;
 			};
 		};
+		1FA7256527975D1900B8D174 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -465,6 +485,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1FA725472795F58600B8D174 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		1FA7256627975D1900B8D174 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FA7256527975D1900B8D174 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

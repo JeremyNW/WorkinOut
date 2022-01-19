@@ -6,20 +6,26 @@
 //
 
 import UIKit
+import Lottie
 
 class AddWeightViewController: UIViewController {
 
     @IBOutlet weak var weightDatePicker: UIDatePicker!
     @IBOutlet weak var weightTextField: UITextField!
-    @IBOutlet weak var weightLottieView: UIView!
+    @IBOutlet weak var weightLottieView: AnimationView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        let jsonName = "TrackingLottie"
+        weightLottieView.animation = Animation.named(jsonName)
+        weightLottieView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        weightLottieView.play()
+        weightLottieView.loopMode = .loop
     }
     
     @IBAction func cancelButtonPressed(_ sender: UIButton) {
-        
+        dismiss(animated: true, completion: nil)
     }
     @IBAction func addButtonPressed(_ sender: UIButton) {
         

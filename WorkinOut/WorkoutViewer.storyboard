@@ -33,7 +33,7 @@
                             <outlet property="delegate" destination="fOj-sR-YeT" id="Ux6-OV-Cf6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AnJ-LA-DBz">
+                    <navigationItem key="navigationItem" title="Your Workouts" id="AnJ-LA-DBz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="7Yd-QD-nTI">
                             <connections>
                                 <segue destination="wTl-Av-Z8i" kind="show" id="Tca-AK-vtD"/>

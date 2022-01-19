@@ -16,17 +16,41 @@ class TableViewController: UITableViewController {
 
     }
 
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Tips"
+        } else if section == 1 {
+            return "Acknowledgements"
+        }
         
-        return manager.tips.count
+        return nil
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 3
+        } else if section == 1 {
+            return 1
+        } else {
+            return 1
+        }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tipCell", for: indexPath)
-
-        cell.textLabel?.text = manager.tips[indexPath.row].title
-        cell.detailTextLabel?.text = manager.tips[indexPath.row].timeToRead
+        
+        if indexPath.section == 0 {
+            cell.textLabel?.text = manager.tips[indexPath.row].title
+            cell.detailTextLabel?.text = manager.tips[indexPath.row].timeToRead
+        }
+            else if indexPath.section == 1 {
+            cell.textLabel?.text = manager.acknowledgements.title
+            cell.detailTextLabel?.text = manager.acknowledgements.timeToRead
+        }
         
         return cell
     }
@@ -36,12 +60,14 @@ class TableViewController: UITableViewController {
         guard let indexPath = tableView.indexPathForSelectedRow,
               
               let destination = segue.destination as? TipTextViewController else { return }
-    
-        let tip = manager.tips[indexPath.row]
         
-        destination.tip = tip
+        if indexPath.section == 0 {
+            destination.tip = manager.tips[indexPath.row]
+        } else if indexPath.section == 1 {
+            destination.tip = manager.acknowledgements
+        }
         
     }
-
+    
 
 }
