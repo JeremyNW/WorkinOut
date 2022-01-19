@@ -8,20 +8,23 @@
 import UIKit
 import Lottie
 
-class WorkoutCreatorViewController: UIViewController {
+class RoutineViewController: UIViewController {
 
-    @IBOutlet weak var workoutLottieView: AnimationView!
+    @IBOutlet weak var routineNameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let jsonName = "WorkoutLottie"
-        workoutLottieView.animation = Animation.named(jsonName)
-        workoutLottieView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
-        workoutLottieView.play()
-        workoutLottieView.loopMode = .loop
     }
     
+
+    
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    
+
 
     /*
     // MARK: - Navigation
@@ -34,3 +37,7 @@ class WorkoutCreatorViewController: UIViewController {
     */
 
 }
+
+
+    
+

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F084FBD279776590029687E /* WorkoutCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F084FBC279776590029687E /* WorkoutCreatorViewController.swift */; };
+		1F084FBD279776590029687E /* RoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F084FBC279776590029687E /* RoutineViewController.swift */; };
 		1F084FBF2797ACB40029687E /* WorkoutLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F084FBE2797ACB40029687E /* WorkoutLottie.json */; };
+		1F9908102798AA2F00FA9143 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F99080F2798AA2F00FA9143 /* AddWorkoutViewController.swift */; };
 		1FA725282795D8B200B8D174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA725272795D8B200B8D174 /* AppDelegate.swift */; };
 		1FA7252A2795D8B200B8D174 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA725292795D8B200B8D174 /* SceneDelegate.swift */; };
 		1FA7252F2795D8B200B8D174 /* Credits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7252D2795D8B200B8D174 /* Credits.storyboard */; };
@@ -22,8 +23,8 @@
 		1FA7255127960ADD00B8D174 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255027960ADD00B8D174 /* Exercise.swift */; };
 		1FA7255327960DEE00B8D174 /* TipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255227960DEE00B8D174 /* TipTableViewController.swift */; };
 		1FA7255627960F1B00B8D174 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255527960F1B00B8D174 /* Tip.swift */; };
-		1FA72558279614A600B8D174 /* WorkoutCreator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA72557279614A600B8D174 /* WorkoutCreator.storyboard */; };
-		1FA7255A279627A800B8D174 /* WorkoutEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA72559279627A800B8D174 /* WorkoutEditor.storyboard */; };
+		1FA72558279614A600B8D174 /* RoutineCreator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA72557279614A600B8D174 /* RoutineCreator.storyboard */; };
+		1FA7255A279627A800B8D174 /* AddWorkout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA72559279627A800B8D174 /* AddWorkout.storyboard */; };
 		1FA7255E2797279500B8D174 /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255D2797279500B8D174 /* AddWeightViewController.swift */; };
 		1FA72562279736B800B8D174 /* TipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA72561279736B800B8D174 /* TipManager.swift */; };
 		1FA72564279743A800B8D174 /* TipTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA72563279743A800B8D174 /* TipTextViewController.swift */; };
@@ -32,8 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F084FBC279776590029687E /* WorkoutCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCreatorViewController.swift; sourceTree = "<group>"; };
+		1F084FBC279776590029687E /* RoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewController.swift; sourceTree = "<group>"; };
 		1F084FBE2797ACB40029687E /* WorkoutLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = WorkoutLottie.json; path = WorkinOut/WorkoutLottie.json; sourceTree = "<group>"; };
+		1F99080F2798AA2F00FA9143 /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
 		1FA725242795D8B200B8D174 /* WorkinOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkinOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA725272795D8B200B8D174 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FA725292795D8B200B8D174 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +50,8 @@
 		1FA7255027960ADD00B8D174 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		1FA7255227960DEE00B8D174 /* TipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTableViewController.swift; sourceTree = "<group>"; };
 		1FA7255527960F1B00B8D174 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
-		1FA72557279614A600B8D174 /* WorkoutCreator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorkoutCreator.storyboard; sourceTree = "<group>"; };
-		1FA72559279627A800B8D174 /* WorkoutEditor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorkoutEditor.storyboard; sourceTree = "<group>"; };
+		1FA72557279614A600B8D174 /* RoutineCreator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutineCreator.storyboard; sourceTree = "<group>"; };
+		1FA72559279627A800B8D174 /* AddWorkout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddWorkout.storyboard; sourceTree = "<group>"; };
 		1FA7255D2797279500B8D174 /* AddWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightViewController.swift; sourceTree = "<group>"; };
 		1FA72561279736B800B8D174 /* TipManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipManager.swift; sourceTree = "<group>"; };
 		1FA72563279743A800B8D174 /* TipTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTextViewController.swift; sourceTree = "<group>"; };
@@ -93,8 +95,8 @@
 				1FA7253C2795D91700B8D174 /* Tracking.storyboard */,
 				1FA7252D2795D8B200B8D174 /* Credits.storyboard */,
 				1FA725402795F38600B8D174 /* WorkoutViewer.storyboard */,
-				1FA72557279614A600B8D174 /* WorkoutCreator.storyboard */,
-				1FA72559279627A800B8D174 /* WorkoutEditor.storyboard */,
+				1FA72557279614A600B8D174 /* RoutineCreator.storyboard */,
+				1FA72559279627A800B8D174 /* AddWorkout.storyboard */,
 				1FA725322795D8B300B8D174 /* LaunchScreen.storyboard */,
 				1FA725432795F40100B8D174 /* Controllers */,
 				1FA7255427960F0000B8D174 /* Models */,
@@ -119,8 +121,9 @@
 			children = (
 				1FA7255227960DEE00B8D174 /* TipTableViewController.swift */,
 				1FA72563279743A800B8D174 /* TipTextViewController.swift */,
-				1F084FBC279776590029687E /* WorkoutCreatorViewController.swift */,
+				1F084FBC279776590029687E /* RoutineViewController.swift */,
 				1FA7255D2797279500B8D174 /* AddWeightViewController.swift */,
+				1F99080F2798AA2F00FA9143 /* AddWorkoutViewController.swift */,
 				1FA725442795F50300B8D174 /* LineGraph.swift */,
 			);
 			path = Controllers;
@@ -211,8 +214,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA72558279614A600B8D174 /* WorkoutCreator.storyboard in Resources */,
-				1FA7255A279627A800B8D174 /* WorkoutEditor.storyboard in Resources */,
+				1FA72558279614A600B8D174 /* RoutineCreator.storyboard in Resources */,
+				1FA7255A279627A800B8D174 /* AddWorkout.storyboard in Resources */,
 				1FA725342795D8B300B8D174 /* LaunchScreen.storyboard in Resources */,
 				1FA7253D2795D91700B8D174 /* Tracking.storyboard in Resources */,
 				1FA725692797627F00B8D174 /* TrackingLottie.json in Resources */,
@@ -238,7 +241,8 @@
 				1FA7255627960F1B00B8D174 /* Tip.swift in Sources */,
 				1FA725282795D8B200B8D174 /* AppDelegate.swift in Sources */,
 				1FA7255127960ADD00B8D174 /* Exercise.swift in Sources */,
-				1F084FBD279776590029687E /* WorkoutCreatorViewController.swift in Sources */,
+				1F9908102798AA2F00FA9143 /* AddWorkoutViewController.swift in Sources */,
+				1F084FBD279776590029687E /* RoutineViewController.swift in Sources */,
 				1FA7252A2795D8B200B8D174 /* SceneDelegate.swift in Sources */,
 				1FA72564279743A800B8D174 /* TipTextViewController.swift in Sources */,
 			);

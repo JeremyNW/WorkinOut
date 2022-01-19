@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Routine-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController title="New Routine" id="Y6W-OH-hqX" customClass="RoutineViewController" customModule="WorkinOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Routine Name (ex. &quot;Arm Day&quot;)" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0v4-eP-VKa">
+                                <rect key="frame" x="24" y="112" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iHT-xd-3n0">
+                                <rect key="frame" x="24" y="232" width="366" height="433.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfl-Sq-BdP">
+                                <rect key="frame" x="150" y="178" width="114" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Exercise"/>
+                                <connections>
+                                    <segue destination="2rG-Zg-jtb" kind="show" id="vmt-C1-FZ4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBh-P6-Y9M">
+                                <rect key="frame" x="137" y="726" width="140" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Complete Routine"/>
+                                <connections>
+                                    <segue destination="9Go-CA-hHs" kind="show" id="PUm-39-NjF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="iHT-xd-3n0" secondAttribute="trailing" constant="24" id="NAB-Py-tNC"/>
+                            <constraint firstItem="0v4-eP-VKa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="Pu7-Hl-pGo"/>
+                            <constraint firstItem="iHT-xd-3n0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="RXN-b7-7wD"/>
+                            <constraint firstItem="wfl-Sq-BdP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="150" id="TSN-U5-z6q"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wfl-Sq-BdP" secondAttribute="trailing" constant="150" id="TTB-p1-DQx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0v4-eP-VKa" secondAttribute="trailing" constant="24" id="bVu-P9-Txk"/>
+                            <constraint firstItem="wfl-Sq-BdP" firstAttribute="top" secondItem="0v4-eP-VKa" secondAttribute="bottom" constant="32" id="eGW-Tq-EWs"/>
+                            <constraint firstItem="0v4-eP-VKa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="jYn-Yp-Jb9"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="routineNameTextField" destination="0v4-eP-VKa" id="BdN-Kz-ijT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+        <!--AddWorkout-->
+        <scene sceneID="Jzb-DI-bbX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddWorkout" id="2rG-Zg-jtb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fR1-4h-Mfc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rU-es-3PT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="23"/>
+        </scene>
+        <!--WorkoutViewer-->
+        <scene sceneID="c3K-hC-xXY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WorkoutViewer" id="9Go-CA-hHs" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="JTW-FF-yxH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grq-bZ-Jbt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="315"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -8,7 +8,6 @@
 import Foundation
 
 struct Exercise {
-    let movement: String
     let reps: Int
     let sets: Int
     let weight: Double

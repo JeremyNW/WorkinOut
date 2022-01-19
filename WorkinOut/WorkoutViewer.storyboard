@@ -23,9 +23,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="bvY-Ta-49d" kind="show" trigger="accessoryAction" id="Fc5-sg-PM8"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -45,20 +42,10 @@
             </objects>
             <point key="canvasLocation" x="873.91304347826099" y="48.883928571428569"/>
         </scene>
-        <!--WorkoutEditor-->
-        <scene sceneID="nVh-UW-gmV">
-            <objects>
-                <viewControllerPlaceholder storyboardName="WorkoutEditor" id="bvY-Ta-49d" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="X6r-bV-q2I"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YX9-HT-PZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1642" y="117"/>
-        </scene>
-        <!--WorkoutCreator-->
+        <!--RoutineCreator-->
         <scene sceneID="DNj-T7-nuF">
             <objects>
-                <viewControllerPlaceholder storyboardName="WorkoutCreator" id="wTl-Av-Z8i" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="RoutineCreator" id="wTl-Av-Z8i" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="o9E-Uz-UVU"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHe-cc-W1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
