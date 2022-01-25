@@ -10,7 +10,6 @@ import Charts
 
 class UIView: UIViewController, ChartViewDelegate {
     
-
     
     lazy var lineChartView: LineChartView = {
         let chartView = LineChartView()
@@ -126,6 +125,7 @@ class UIView: UIViewController, ChartViewDelegate {
         ChartDataEntry(x: 19.0, y: 5.0),
         ChartDataEntry(x: 20.0, y: -8.0)
     ]
+    
     
     
     

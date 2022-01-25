@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="37" y="-94"/>
         </scene>
-        <!--WorkoutViewer-->
+        <!--Workout-->
         <scene sceneID="fRF-4D-Ois">
             <objects>
-                <viewControllerPlaceholder storyboardName="WorkoutViewer" id="g8Z-Wx-Ug5" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Workout" id="g8Z-Wx-Ug5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Workout Viewer" image="tray.2" catalog="system" id="uLY-Jp-VtY"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0z-oC-VQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
