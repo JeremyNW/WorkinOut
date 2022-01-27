@@ -12,10 +12,10 @@
 		1F0D18412798CC72009B4284 /* WorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D18402798CC72009B4284 /* WorkoutController.swift */; };
 		1F0D18432798CF50009B4284 /* ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D18422798CF50009B4284 /* ExerciseExtension.swift */; };
 		1F0D18462798D0E7009B4284 /* WorkinOutCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D18442798D0E7009B4284 /* WorkinOutCoreData.xcdatamodeld */; };
+		1F55384327A08EA10049EB20 /* WorkoutViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55384227A08EA10049EB20 /* WorkoutViewerViewController.swift */; };
 		1F6F6C0A279B6C6500589856 /* WorkoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F6C09279B6C6500589856 /* WorkoutExtension.swift */; };
 		1F6F6C0E279B769400589856 /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F6C0D279B769400589856 /* WorkoutTableViewController.swift */; };
 		1F6F6C10279CDA4F00589856 /* WorkoutCreator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6F6C0F279CDA4F00589856 /* WorkoutCreator.storyboard */; };
-		1F6F6C12279F3A2500589856 /* Teemo.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F6F6C11279F3A2500589856 /* Teemo.json */; };
 		1F9908102798AA2F00FA9143 /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F99080F2798AA2F00FA9143 /* AddExerciseViewController.swift */; };
 		1FA725282795D8B200B8D174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA725272795D8B200B8D174 /* AppDelegate.swift */; };
 		1FA7252A2795D8B200B8D174 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA725292795D8B200B8D174 /* SceneDelegate.swift */; };
@@ -43,10 +43,10 @@
 		1F0D18402798CC72009B4284 /* WorkoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutController.swift; sourceTree = "<group>"; };
 		1F0D18422798CF50009B4284 /* ExerciseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseExtension.swift; sourceTree = "<group>"; };
 		1F0D18452798D0E7009B4284 /* ExerciseCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExerciseCoreData.xcdatamodel; sourceTree = "<group>"; };
+		1F55384227A08EA10049EB20 /* WorkoutViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewerViewController.swift; sourceTree = "<group>"; };
 		1F6F6C09279B6C6500589856 /* WorkoutExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutExtension.swift; sourceTree = "<group>"; };
 		1F6F6C0D279B769400589856 /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
 		1F6F6C0F279CDA4F00589856 /* WorkoutCreator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorkoutCreator.storyboard; sourceTree = "<group>"; };
-		1F6F6C11279F3A2500589856 /* Teemo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Teemo.json; sourceTree = "<group>"; };
 		1F99080F2798AA2F00FA9143 /* AddExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
 		1FA725242795D8B200B8D174 /* WorkinOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkinOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA725272795D8B200B8D174 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +136,7 @@
 				1F6F6C0D279B769400589856 /* WorkoutTableViewController.swift */,
 				1F084FBC279776590029687E /* WorkoutCreationViewController.swift */,
 				1F99080F2798AA2F00FA9143 /* AddExerciseViewController.swift */,
+				1F55384227A08EA10049EB20 /* WorkoutViewerViewController.swift */,
 				1FA725442795F50300B8D174 /* LineGraph.swift */,
 			);
 			path = Controllers;
@@ -144,7 +145,6 @@
 		1FA725462795F53500B8D174 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F6F6C11279F3A2500589856 /* Teemo.json */,
 				1FA725682797627F00B8D174 /* TrackingLottie.json */,
 				1F084FBE2797ACB40029687E /* WorkoutLottie.json */,
 			);
@@ -236,7 +236,6 @@
 				1FA725312795D8B300B8D174 /* Assets.xcassets in Resources */,
 				1F6F6C10279CDA4F00589856 /* WorkoutCreator.storyboard in Resources */,
 				1FA7253F2795DF0A00B8D174 /* Main.storyboard in Resources */,
-				1F6F6C12279F3A2500589856 /* Teemo.json in Resources */,
 				1FA725412795F38600B8D174 /* Workout.storyboard in Resources */,
 				1F084FBF2797ACB40029687E /* WorkoutLottie.json in Resources */,
 				1FA7252F2795D8B200B8D174 /* Credits.storyboard in Resources */,
@@ -258,6 +257,7 @@
 				1F6F6C0E279B769400589856 /* WorkoutTableViewController.swift in Sources */,
 				1FA7255627960F1B00B8D174 /* Tip.swift in Sources */,
 				1F0D18432798CF50009B4284 /* ExerciseExtension.swift in Sources */,
+				1F55384327A08EA10049EB20 /* WorkoutViewerViewController.swift in Sources */,
 				1F6F6C0A279B6C6500589856 /* WorkoutExtension.swift in Sources */,
 				1FA725282795D8B200B8D174 /* AppDelegate.swift in Sources */,
 				1F0D18462798D0E7009B4284 /* WorkinOutCoreData.xcdatamodeld in Sources */,

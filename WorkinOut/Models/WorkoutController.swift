@@ -15,22 +15,17 @@ class WorkoutController {
         return appDelegate.persistentContainer.viewContext
     }()
     static let shared = WorkoutController()
-    var workouts: [Workout] = []
-    
-    private init() {
-        load()
+    var workouts: [Workout] {
+        let request: NSFetchRequest<Workout> = Workout.fetchRequest()
+        return (try? context.fetch(request)) ?? []
     }
+
+    private init() { }
     
     func createWorkout(name: String) -> Workout {
         let workout = Workout(name: name)
-        workouts.append(workout)
         try? context.save()
         return workout
-    }
-    
-    func load() {
-        let request = Workout.fetchRequest()
-        workouts = (try? context.fetch(request)) ?? []
     }
     
     func add(exercise: Exercise, to workout: Workout) {
@@ -44,9 +39,6 @@ class WorkoutController {
     }
     
     func delete(workout: Workout) {
-        if let index = workouts.firstIndex(of: workout) {
-            workouts.remove(at: index)
-        }
         context.delete(workout)
         try? context.save()
     }

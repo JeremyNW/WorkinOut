@@ -14,8 +14,13 @@ class WorkoutTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
     
     @IBAction func addWorkoutButtonPressed(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Workout Name", message: "What will you call this workout?", preferredStyle: .alert)
@@ -37,8 +42,7 @@ class WorkoutTableViewController: UITableViewController {
             let storyboard = UIStoryboard(name: "WorkoutCreator", bundle: nil)
             guard let destination = storyboard.instantiateInitialViewController() as? WorkoutCreationViewController else {return}
             destination.workout = workout
-            self.present(destination, animated: true, completion: nil)
-            
+            self.navigationController?.pushViewController(destination, animated: true)
             
         }
         alert.addAction(cancelButton)
@@ -47,7 +51,6 @@ class WorkoutTableViewController: UITableViewController {
         present(alert, animated: true)
     }
     
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         WorkoutController.shared.workouts.count
     }
@@ -55,6 +58,11 @@ class WorkoutTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "workoutCell", for: indexPath)
         let workout = WorkoutController.shared.workouts[indexPath.row]
+        if let exercises = workout.exercises?.array as? [Exercise] {
+            cell.detailTextLabel?.text = exercises.compactMap { "• " + ($0.name ?? "") }.joined(separator: "\n")
+        }
+            
+        
         cell.textLabel?.text = workout.name
         return cell
     }
@@ -70,23 +78,25 @@ class WorkoutTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-           
-                    let workout = WorkoutController.shared.workouts[indexPath.row]
-                    WorkoutController.shared.delete(workout: workout)
-                    tableView.deleteRows(at: [indexPath], with: .fade)
-               
+            
+            let workout = WorkoutController.shared.workouts[indexPath.row]
+            WorkoutController.shared.delete(workout: workout)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
     }
     
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // "toWorkout"
-        guard segue.identifier == "toWorkout",
-              let destination = segue.destination as? WorkoutCreationViewController
-        else { return }
-        
-        destination.workout = self.workout
+        if segue.identifier == "workoutViewerSegue",
+           let destination = segue.destination as? WorkoutCreationViewController,
+           let indexPath = tableView.indexPathForSelectedRow {
+            let workout = WorkoutController.shared.workouts[indexPath.row]
+            destination.workout = workout
+        }
     }
-    
 }

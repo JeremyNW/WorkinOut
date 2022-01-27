@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfY-6N-r1g" customClass="AnimationView" customModule="Lottie">
-                                <rect key="frame" x="11" y="273" width="350" height="350"/>
+                                <rect key="frame" x="-90.5" y="273" width="350.5" height="350"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="a9D-zn-O1T"/>
@@ -80,16 +80,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID2-Zs-51Q">
-                                <rect key="frame" x="132" y="647" width="107.5" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Add Exercise"/>
-                                <connections>
-                                    <action selector="addExerciseButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4od-OF-Vn4"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Exercise name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LE2-yf-sHC">
-                                <rect key="frame" x="24" y="112" width="323.5" height="34"/>
+                                <rect key="frame" x="24" y="112" width="121.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -98,8 +90,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MHL-cb-55q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="0LO-gb-WVw"/>
-                            <constraint firstItem="ID2-Zs-51Q" firstAttribute="top" secondItem="SfY-6N-r1g" secondAttribute="bottom" constant="24" id="285-WZ-pNZ"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ID2-Zs-51Q" secondAttribute="trailing" constant="132" id="Bat-nN-NYR"/>
                             <constraint firstItem="LE2-yf-sHC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="Fcr-7F-YIb"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MHL-cb-55q" secondAttribute="trailing" constant="32" id="Fmh-Yd-1wX"/>
                             <constraint firstItem="LE2-yf-sHC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="OVI-vx-Sb6"/>
@@ -107,7 +97,6 @@
                             <constraint firstItem="SfY-6N-r1g" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="iOg-bK-ICo"/>
                             <constraint firstItem="SfY-6N-r1g" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="j2m-5a-pSk"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="LE2-yf-sHC" secondAttribute="trailing" constant="24" id="r8N-Vk-lQN"/>
-                            <constraint firstItem="ID2-Zs-51Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="132" id="sme-8t-mZu"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

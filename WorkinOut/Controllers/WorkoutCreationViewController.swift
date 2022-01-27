@@ -10,17 +10,22 @@ import Lottie
 import Foundation
 
 class WorkoutCreationViewController: UIViewController {
-
+    
     @IBOutlet weak var workoutCreatorTableView: UITableView!
     
     var workout: Workout?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = workout?.name
         workoutCreatorTableView.delegate = self
         workoutCreatorTableView.dataSource = self
+        workoutCreatorTableView.reloadData()
+    
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonTapped))
+    
     }
     
     
@@ -30,24 +35,23 @@ class WorkoutCreationViewController: UIViewController {
     }
 
     
-    @IBAction func addWorkoutButtonPressed(_ sender: UIButton) {
-        
-        dismiss(animated: true)
-    }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        guard segue.identifier == "addExerciseSegue",
-                let destination = segue.destination as? AddExerciseViewController else { return }
-        
-        destination.workout = self.workout
-        
+        if segue.identifier == "addExerciseSegue",
+           let destination = segue.destination as? AddExerciseViewController {
+            destination.workout = self.workout
+        } else if segue.identifier == "workoutViewSegue",
+                  let destination = segue.destination as? WorkoutViewerViewController,
+                  let indexPath = workoutCreatorTableView.indexPathForSelectedRow {
+            let exercise = workout?.exercises?.object(at: indexPath.row) as? Exercise
+            destination.exercise = exercise
+        }
     }
     
-
+    @objc func doneButtonTapped() {
+        navigationController?.popToRootViewController(animated: true)
+    }
 }
-
 
 
 extension WorkoutCreationViewController: UITableViewDataSource, UITableViewDelegate {
@@ -55,22 +59,21 @@ extension WorkoutCreationViewController: UITableViewDataSource, UITableViewDeleg
         workout?.exercises?.count ?? 0
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            workout?.removeFromExercises(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.left)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "routineCell", for: indexPath)
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
-                //request.predicate = NSPredicate(format: "age = %@", "12")
-                request.returnsObjectsAsFaults = false
-                do {
-                    let result = try context.fetch(request)
-                    for data in result as! [NSManagedObject] {
-                       print(data.value(forKey: "name") as! String)
-                        cell.textLabel!.text = data.value(forKey: "name") as! String
-                    }
-                    } catch {
-                        print("Error")
-                    }
+        let exercise = workout?.exercises?.object(at: indexPath.row) as? Exercise
+        if let weight = exercise?.weight {
+        cell.detailTextLabel?.text = "Weight: \(String(describing: weight)) lbs."
+        }
+        
+        cell.textLabel?.text = exercise?.name
         return cell
     }
 }
