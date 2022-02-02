@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class AddWeightViewController: UIViewController {
+class AddBodyWeightViewController: UIViewController {
 
     @IBOutlet weak var weightDatePicker: UIDatePicker!
     @IBOutlet weak var weightTextField: UITextField!
@@ -23,22 +23,16 @@ class AddWeightViewController: UIViewController {
         weightLottieView.play()
         weightLottieView.loopMode = .loop
     }
-    
-    @IBAction func cancelButtonPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
-    @IBAction func addButtonPressed(_ sender: UIButton) {
-        
-    }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        guard let pounds = weightTextField.text,
+              let poundString = Double(pounds),
+              !pounds.isEmpty
+        else { return }
+        let date = weightDatePicker.date
+        
+        BodyWeightController.shared.addBodyWeight(pounds: poundString, date: date)
+        navigationController?.popViewController(animated: true)
     }
-    */
 
 }

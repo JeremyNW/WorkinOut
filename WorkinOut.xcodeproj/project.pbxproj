@@ -13,6 +13,9 @@
 		1F0D18432798CF50009B4284 /* ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D18422798CF50009B4284 /* ExerciseExtension.swift */; };
 		1F0D18462798D0E7009B4284 /* WorkinOutCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D18442798D0E7009B4284 /* WorkinOutCoreData.xcdatamodeld */; };
 		1F55384327A08EA10049EB20 /* WorkoutViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55384227A08EA10049EB20 /* WorkoutViewerViewController.swift */; };
+		1F55384527A50A980049EB20 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55384427A50A980049EB20 /* TrackingViewController.swift */; };
+		1F55384727A50F160049EB20 /* BodyWeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55384627A50F160049EB20 /* BodyWeightController.swift */; };
+		1F55384927A5102C0049EB20 /* BodyWeightExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55384827A5102C0049EB20 /* BodyWeightExtension.swift */; };
 		1F6F6C0A279B6C6500589856 /* WorkoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F6C09279B6C6500589856 /* WorkoutExtension.swift */; };
 		1F6F6C0E279B769400589856 /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F6C0D279B769400589856 /* WorkoutTableViewController.swift */; };
 		1F6F6C10279CDA4F00589856 /* WorkoutCreator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6F6C0F279CDA4F00589856 /* WorkoutCreator.storyboard */; };
@@ -25,12 +28,11 @@
 		1FA7253D2795D91700B8D174 /* Tracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7253C2795D91700B8D174 /* Tracking.storyboard */; };
 		1FA7253F2795DF0A00B8D174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7253E2795DF0A00B8D174 /* Main.storyboard */; };
 		1FA725412795F38600B8D174 /* Workout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA725402795F38600B8D174 /* Workout.storyboard */; };
-		1FA725452795F50300B8D174 /* LineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA725442795F50300B8D174 /* LineGraph.swift */; };
 		1FA725492795F58600B8D174 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 1FA725482795F58600B8D174 /* Charts */; };
 		1FA7255327960DEE00B8D174 /* TipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255227960DEE00B8D174 /* TipTableViewController.swift */; };
 		1FA7255627960F1B00B8D174 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255527960F1B00B8D174 /* Tip.swift */; };
 		1FA7255A279627A800B8D174 /* AddExercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA72559279627A800B8D174 /* AddExercise.storyboard */; };
-		1FA7255E2797279500B8D174 /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255D2797279500B8D174 /* AddWeightViewController.swift */; };
+		1FA7255E2797279500B8D174 /* AddBodyWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7255D2797279500B8D174 /* AddBodyWeightViewController.swift */; };
 		1FA72562279736B800B8D174 /* TipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA72561279736B800B8D174 /* TipManager.swift */; };
 		1FA72564279743A800B8D174 /* TipTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA72563279743A800B8D174 /* TipTextViewController.swift */; };
 		1FA7256727975D1900B8D174 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1FA7256627975D1900B8D174 /* Lottie */; };
@@ -44,6 +46,9 @@
 		1F0D18422798CF50009B4284 /* ExerciseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseExtension.swift; sourceTree = "<group>"; };
 		1F0D18452798D0E7009B4284 /* ExerciseCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExerciseCoreData.xcdatamodel; sourceTree = "<group>"; };
 		1F55384227A08EA10049EB20 /* WorkoutViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewerViewController.swift; sourceTree = "<group>"; };
+		1F55384427A50A980049EB20 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		1F55384627A50F160049EB20 /* BodyWeightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightController.swift; sourceTree = "<group>"; };
+		1F55384827A5102C0049EB20 /* BodyWeightExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightExtension.swift; sourceTree = "<group>"; };
 		1F6F6C09279B6C6500589856 /* WorkoutExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutExtension.swift; sourceTree = "<group>"; };
 		1F6F6C0D279B769400589856 /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
 		1F6F6C0F279CDA4F00589856 /* WorkoutCreator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorkoutCreator.storyboard; sourceTree = "<group>"; };
@@ -58,11 +63,10 @@
 		1FA7253C2795D91700B8D174 /* Tracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tracking.storyboard; sourceTree = "<group>"; };
 		1FA7253E2795DF0A00B8D174 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1FA725402795F38600B8D174 /* Workout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Workout.storyboard; sourceTree = "<group>"; };
-		1FA725442795F50300B8D174 /* LineGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraph.swift; sourceTree = "<group>"; };
 		1FA7255227960DEE00B8D174 /* TipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTableViewController.swift; sourceTree = "<group>"; };
 		1FA7255527960F1B00B8D174 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		1FA72559279627A800B8D174 /* AddExercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddExercise.storyboard; sourceTree = "<group>"; };
-		1FA7255D2797279500B8D174 /* AddWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightViewController.swift; sourceTree = "<group>"; };
+		1FA7255D2797279500B8D174 /* AddBodyWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBodyWeightViewController.swift; sourceTree = "<group>"; };
 		1FA72561279736B800B8D174 /* TipManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipManager.swift; sourceTree = "<group>"; };
 		1FA72563279743A800B8D174 /* TipTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTextViewController.swift; sourceTree = "<group>"; };
 		1FA725682797627F00B8D174 /* TrackingLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TrackingLottie.json; path = WorkinOut/TrackingLottie.json; sourceTree = "<group>"; };
@@ -132,12 +136,12 @@
 			children = (
 				1FA7255227960DEE00B8D174 /* TipTableViewController.swift */,
 				1FA72563279743A800B8D174 /* TipTextViewController.swift */,
-				1FA7255D2797279500B8D174 /* AddWeightViewController.swift */,
+				1FA7255D2797279500B8D174 /* AddBodyWeightViewController.swift */,
 				1F6F6C0D279B769400589856 /* WorkoutTableViewController.swift */,
 				1F084FBC279776590029687E /* WorkoutCreationViewController.swift */,
 				1F99080F2798AA2F00FA9143 /* AddExerciseViewController.swift */,
 				1F55384227A08EA10049EB20 /* WorkoutViewerViewController.swift */,
-				1FA725442795F50300B8D174 /* LineGraph.swift */,
+				1F55384427A50A980049EB20 /* TrackingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -155,8 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				1F0D18402798CC72009B4284 /* WorkoutController.swift */,
-				1F0D18422798CF50009B4284 /* ExerciseExtension.swift */,
 				1F6F6C09279B6C6500589856 /* WorkoutExtension.swift */,
+				1F0D18422798CF50009B4284 /* ExerciseExtension.swift */,
+				1F55384627A50F160049EB20 /* BodyWeightController.swift */,
+				1F55384827A5102C0049EB20 /* BodyWeightExtension.swift */,
 				1FA7255527960F1B00B8D174 /* Tip.swift */,
 				1FA72561279736B800B8D174 /* TipManager.swift */,
 			);
@@ -250,8 +256,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FA72562279736B800B8D174 /* TipManager.swift in Sources */,
-				1FA7255E2797279500B8D174 /* AddWeightViewController.swift in Sources */,
-				1FA725452795F50300B8D174 /* LineGraph.swift in Sources */,
+				1F55384927A5102C0049EB20 /* BodyWeightExtension.swift in Sources */,
+				1FA7255E2797279500B8D174 /* AddBodyWeightViewController.swift in Sources */,
 				1F0D18412798CC72009B4284 /* WorkoutController.swift in Sources */,
 				1FA7255327960DEE00B8D174 /* TipTableViewController.swift in Sources */,
 				1F6F6C0E279B769400589856 /* WorkoutTableViewController.swift in Sources */,
@@ -259,6 +265,8 @@
 				1F0D18432798CF50009B4284 /* ExerciseExtension.swift in Sources */,
 				1F55384327A08EA10049EB20 /* WorkoutViewerViewController.swift in Sources */,
 				1F6F6C0A279B6C6500589856 /* WorkoutExtension.swift in Sources */,
+				1F55384527A50A980049EB20 /* TrackingViewController.swift in Sources */,
+				1F55384727A50F160049EB20 /* BodyWeightController.swift in Sources */,
 				1FA725282795D8B200B8D174 /* AppDelegate.swift in Sources */,
 				1F0D18462798D0E7009B4284 /* WorkinOutCoreData.xcdatamodeld in Sources */,
 				1F9908102798AA2F00FA9143 /* AddExerciseViewController.swift in Sources */,
@@ -419,6 +427,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -447,6 +456,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
