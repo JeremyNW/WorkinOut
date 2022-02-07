@@ -4,7 +4,7 @@
 //
 //  Created by Jeremy Warren on 1/28/22.
 //
-
+import Foundation
 import UIKit
 import Charts
 
@@ -20,8 +20,8 @@ class TrackingViewController: UIViewController, ChartViewDelegate {
         
         weightGraph.backgroundColor = .darkGray
         weightGraph.xAxis.labelPosition = .bottom
+        weightGraph.xAxis.valueFormatter = MyFormatter()
         let rAxis = weightGraph.rightAxis
-        let lAxis = weightGraph.leftAxis
         rAxis.enabled = false
     }
     
@@ -37,4 +37,20 @@ class TrackingViewController: UIViewController, ChartViewDelegate {
             return nil
         }
     }
+}
+
+
+class MyFormatter: AxisValueFormatter {
+    static let formatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .none
+        formatter.dateStyle = .short
+        return formatter
+    }()
+    func stringForValue(_ value: Double, axis: AxisBase?) -> String {
+        let date = Date(timeIntervalSince1970: value)
+        return Self.formatter.string(from: date)
+    }
+    
+    
 }
