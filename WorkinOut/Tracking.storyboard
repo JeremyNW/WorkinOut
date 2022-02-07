@@ -16,16 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJp-DM-W2H">
-                                <rect key="frame" x="120" y="682" width="174" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Add Body Weight">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="NCs-ec-Ckx" kind="show" id="q4y-7s-Y0w"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYR-hi-YaM" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="12" y="152" width="390" height="390"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -39,13 +29,21 @@
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rYR-hi-YaM" secondAttribute="trailing" constant="12" id="DQW-kj-YBO"/>
                             <constraint firstItem="rYR-hi-YaM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="FE3-in-i6E"/>
-                            <constraint firstItem="OJp-DM-W2H" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="120" id="FVu-dv-nmf"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="OJp-DM-W2H" secondAttribute="bottom" constant="100" id="fl4-HU-M1h"/>
                             <constraint firstItem="rYR-hi-YaM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="12" id="mDO-LC-Wft"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OJp-DM-W2H" secondAttribute="trailing" constant="120" id="y76-mL-7dD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TIc-Ss-P9V"/>
+                    <navigationItem key="navigationItem" id="TIc-Ss-P9V">
+                        <barButtonItem key="leftBarButtonItem" title="View Log" id="Jf3-Ux-43E">
+                            <connections>
+                                <segue destination="ANv-9L-dyu" kind="show" id="dUl-lG-1vU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tYl-KM-kdM">
+                            <connections>
+                                <segue destination="NCs-ec-Ckx" kind="show" id="Y5h-30-d6t"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="weightGraph" destination="rYR-hi-YaM" id="7CT-wX-mxR"/>
@@ -54,6 +52,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+        </scene>
+        <!--Body Weight Entries-->
+        <scene sceneID="3Jk-ME-vEm">
+            <objects>
+                <tableViewController id="ANv-9L-dyu" customClass="BodyWeightEntriesTableViewController" customModule="WorkinOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="YZt-Y1-tTL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bodyWeightCell" textLabel="IKa-RF-dX5" detailTextLabel="Iui-4X-0iC" style="IBUITableViewCellStyleSubtitle" id="8WV-fC-RmK">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8WV-fC-RmK" id="bTb-1w-E8t">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IKa-RF-dX5">
+                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iui-4X-0iC">
+                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ANv-9L-dyu" id="G1i-cw-9Iq"/>
+                            <outlet property="delegate" destination="ANv-9L-dyu" id="vvz-OT-w5d"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Body Weight Entries" id="d1h-Pm-qHf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QxG-Xp-V47" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="98"/>
         </scene>
         <!--Add Body Weight View Controller-->
         <scene sceneID="Iy2-hs-XZW">

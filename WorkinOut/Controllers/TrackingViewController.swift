@@ -15,18 +15,20 @@ class TrackingViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let dataSet = LineChartDataSet(entries: entries, label: "Bodyweight")
-        weightGraph.data = LineChartData(dataSet: dataSet)
-        
-        weightGraph.backgroundColor = .darkGray
-        weightGraph.xAxis.labelPosition = .bottom
-        weightGraph.xAxis.valueFormatter = MyFormatter()
-        let rAxis = weightGraph.rightAxis
-        rAxis.enabled = false
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        weightGraph.inputViewController?.loadView()
+        let dataSet = LineChartDataSet(entries: entries, label: "Bodyweight")
+        weightGraph.data = LineChartData(dataSet: dataSet)
+        dataSet.drawCirclesEnabled = false
+        weightGraph.backgroundColor = .darkGray
+        weightGraph.xAxis.labelPosition = .bottom
+        weightGraph.xAxis.valueFormatter = MyFormatter()
+        weightGraph.isUserInteractionEnabled = false
+        let rAxis = weightGraph.rightAxis
+        rAxis.enabled = false
+        
     }
     
     var entries: [ChartDataEntry] {

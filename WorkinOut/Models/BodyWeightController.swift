@@ -17,6 +17,7 @@ class BodyWeightController {
     static let shared = BodyWeightController()
     var bodyWeights: [BodyWeight] {
         let request: NSFetchRequest<BodyWeight> = BodyWeight.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
         return (try? context.fetch(request)) ?? []
     }
     

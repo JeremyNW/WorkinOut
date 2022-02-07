@@ -12,6 +12,7 @@
 		1F0D18412798CC72009B4284 /* WorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D18402798CC72009B4284 /* WorkoutController.swift */; };
 		1F0D18432798CF50009B4284 /* ExerciseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D18422798CF50009B4284 /* ExerciseExtension.swift */; };
 		1F0D18462798D0E7009B4284 /* WorkinOutCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D18442798D0E7009B4284 /* WorkinOutCoreData.xcdatamodeld */; };
+		1F10322C27B176120051B849 /* BodyWeightEntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10322B27B176120051B849 /* BodyWeightEntriesTableViewController.swift */; };
 		1F55384327A08EA10049EB20 /* WorkoutViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55384227A08EA10049EB20 /* WorkoutViewerViewController.swift */; };
 		1F55384527A50A980049EB20 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55384427A50A980049EB20 /* TrackingViewController.swift */; };
 		1F55384727A50F160049EB20 /* BodyWeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F55384627A50F160049EB20 /* BodyWeightController.swift */; };
@@ -45,6 +46,7 @@
 		1F0D18402798CC72009B4284 /* WorkoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutController.swift; sourceTree = "<group>"; };
 		1F0D18422798CF50009B4284 /* ExerciseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseExtension.swift; sourceTree = "<group>"; };
 		1F0D18452798D0E7009B4284 /* ExerciseCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExerciseCoreData.xcdatamodel; sourceTree = "<group>"; };
+		1F10322B27B176120051B849 /* BodyWeightEntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightEntriesTableViewController.swift; sourceTree = "<group>"; };
 		1F55384227A08EA10049EB20 /* WorkoutViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewerViewController.swift; sourceTree = "<group>"; };
 		1F55384427A50A980049EB20 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		1F55384627A50F160049EB20 /* BodyWeightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				1F99080F2798AA2F00FA9143 /* AddExerciseViewController.swift */,
 				1F55384227A08EA10049EB20 /* WorkoutViewerViewController.swift */,
 				1F55384427A50A980049EB20 /* TrackingViewController.swift */,
+				1F10322B27B176120051B849 /* BodyWeightEntriesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				1F6F6C0A279B6C6500589856 /* WorkoutExtension.swift in Sources */,
 				1F55384527A50A980049EB20 /* TrackingViewController.swift in Sources */,
 				1F55384727A50F160049EB20 /* BodyWeightController.swift in Sources */,
+				1F10322C27B176120051B849 /* BodyWeightEntriesTableViewController.swift in Sources */,
 				1FA725282795D8B200B8D174 /* AppDelegate.swift in Sources */,
 				1F0D18462798D0E7009B4284 /* WorkinOutCoreData.xcdatamodeld in Sources */,
 				1F9908102798AA2F00FA9143 /* AddExerciseViewController.swift in Sources */,
