@@ -62,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bodyWeightCell" textLabel="IKa-RF-dX5" detailTextLabel="Iui-4X-0iC" style="IBUITableViewCellStyleSubtitle" id="8WV-fC-RmK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="bodyWeightCell" textLabel="IKa-RF-dX5" detailTextLabel="Iui-4X-0iC" style="IBUITableViewCellStyleSubtitle" id="8WV-fC-RmK">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8WV-fC-RmK" id="bTb-1w-E8t">
@@ -153,7 +153,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rqp-dc-EVd">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="jXR-aS-SzC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jXR-aS-SzC">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="NCs-ec-Ckx" id="Jwm-cn-iTn"/>
                             </connections>
