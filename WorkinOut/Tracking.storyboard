@@ -98,7 +98,7 @@
             </objects>
             <point key="canvasLocation" x="1745" y="98"/>
         </scene>
-        <!--Add Body Weight View Controller-->
+        <!--Add Body Weight-->
         <scene sceneID="Iy2-hs-XZW">
             <objects>
                 <viewController id="NCs-ec-Ckx" customClass="AddBodyWeightViewController" customModule="WorkinOut" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,7 +152,7 @@
                             <constraint firstItem="gbA-ZV-xR8" firstAttribute="leading" secondItem="lDC-La-cma" secondAttribute="leading" constant="12" id="qrU-EU-2Xx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Rqp-dc-EVd">
+                    <navigationItem key="navigationItem" title="Add Body Weight" id="Rqp-dc-EVd">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="jXR-aS-SzC">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="NCs-ec-Ckx" id="Jwm-cn-iTn"/>

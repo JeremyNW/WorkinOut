@@ -75,7 +75,7 @@
         <scene sceneID="BA6-aG-CuL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wwx-7O-quq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Workout" image="mustache" catalog="system" id="j5o-LB-5yc"/>
+                    <tabBarItem key="tabBarItem" title="Workout" image="mustache" catalog="system" selectedImage="mustache.fill" id="j5o-LB-5yc"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OZe-iC-45x">
@@ -94,6 +94,7 @@
     </scenes>
     <resources>
         <image name="mustache" catalog="system" width="128" height="52"/>
+        <image name="mustache.fill" catalog="system" width="128" height="49"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -28,7 +28,8 @@ class TrackingViewController: UIViewController, ChartViewDelegate {
         weightGraph.isUserInteractionEnabled = false
         let rAxis = weightGraph.rightAxis
         rAxis.enabled = false
-        
+        weightGraph.isHidden = entries.isEmpty
+        weightGraph.xAxis.labelCount = entries.count
     }
     
     var entries: [ChartDataEntry] {

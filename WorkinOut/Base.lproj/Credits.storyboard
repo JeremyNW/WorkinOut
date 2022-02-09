@@ -95,7 +95,7 @@
         <scene sceneID="tOC-FX-Gd3">
             <objects>
                 <navigationController title="Credits" id="bdk-sX-21A" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Credits" image="creditcard" catalog="system" id="DvC-JT-h0g"/>
+                    <tabBarItem key="tabBarItem" title="Tips" image="lightbulb" catalog="system" selectedImage="lightbulb.fill" id="DvC-JT-h0g"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="lgd-qX-efY">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -111,7 +111,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="lightbulb" catalog="system" width="113" height="128"/>
+        <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
