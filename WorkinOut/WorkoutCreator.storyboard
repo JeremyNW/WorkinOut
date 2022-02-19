@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,30 +20,58 @@
                                 <rect key="frame" x="24" y="167" width="366" height="616"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="routineCell" textLabel="Qxp-Th-UT0" detailTextLabel="i3F-xc-748" rowHeight="103" style="IBUITableViewCellStyleSubtitle" id="pvU-af-9uM">
-                                        <rect key="frame" x="0.0" y="44.5" width="366" height="103"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="routineCell" rowHeight="213" id="pvU-af-9uM" customClass="WorkoutTableViewCell" customModule="WorkinOut" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="366" height="213"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pvU-af-9uM" id="aQo-ak-Pd3">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="103"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="213"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qxp-Th-UT0">
-                                                    <rect key="frame" x="20" y="33.5" width="30" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wX-US-D0k">
+                                                    <rect key="frame" x="12" y="0.0" width="342" height="157.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i3F-xc-748">
-                                                    <rect key="frame" x="20" y="53" width="44" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FNs-Cm-ifc">
+                                                    <rect key="frame" x="32" y="169.5" width="302" height="20.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="647-FW-D7b">
+                                                            <rect key="frame" x="0.0" y="0.0" width="100.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nh8-Ge-cMB">
+                                                            <rect key="frame" x="100.5" y="0.0" width="101" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNw-83-kul">
+                                                            <rect key="frame" x="201.5" y="0.0" width="100.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FNs-Cm-ifc" firstAttribute="top" secondItem="1wX-US-D0k" secondAttribute="bottom" constant="12" id="6KP-KV-MOf"/>
+                                                <constraint firstAttribute="trailing" secondItem="1wX-US-D0k" secondAttribute="trailing" constant="12" id="FRu-Pf-9JU"/>
+                                                <constraint firstItem="FNs-Cm-ifc" firstAttribute="leading" secondItem="aQo-ak-Pd3" secondAttribute="leadingMargin" constant="12" id="IVy-Nb-3fL"/>
+                                                <constraint firstItem="1wX-US-D0k" firstAttribute="top" secondItem="aQo-ak-Pd3" secondAttribute="top" id="OPj-Qa-EXg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="FNs-Cm-ifc" secondAttribute="trailing" constant="12" id="cPe-DY-Lvl"/>
+                                                <constraint firstItem="1wX-US-D0k" firstAttribute="leading" secondItem="aQo-ak-Pd3" secondAttribute="leading" constant="12" id="cxk-H8-ASX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FNs-Cm-ifc" secondAttribute="bottom" constant="12" id="idt-RF-nqx"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="exerciseNameLabel" destination="1wX-US-D0k" id="cLc-SS-Xvs"/>
+                                            <outlet property="repsLabel" destination="Nh8-Ge-cMB" id="nP9-BX-yDn"/>
+                                            <outlet property="setsLabel" destination="647-FW-D7b" id="dFV-Fl-6jG"/>
+                                            <outlet property="weightLabel" destination="fNw-83-kul" id="ENB-6R-u8T"/>
                                             <segue destination="uFb-Z0-U2v" kind="presentation" identifier="workoutViewSegue" id="9YK-AX-bo1"/>
                                         </connections>
                                     </tableViewCell>

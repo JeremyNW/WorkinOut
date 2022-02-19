@@ -67,13 +67,29 @@ extension WorkoutCreationViewController: UITableViewDataSource, UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "routineCell", for: indexPath)
-        let exercise = workout?.exercises?.object(at: indexPath.row) as? Exercise
-        if let weight = exercise?.weight {
-        cell.detailTextLabel?.text = "Weight: \(String(describing: weight)) lbs."
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "routineCell", for: indexPath) as! WorkoutTableViewCell
         
-        cell.textLabel?.text = exercise?.name
+        
+        let exercise = workout?.exercises?.object(at: indexPath.row) as? Exercise
+        cell.exerciseNameLabel.text = exercise?.name
+        cell.setsLabel.text = "Sets: \(exercise?.sets ?? 0)"
+        cell.weightLabel.text = "Weight: \(exercise?.weight ?? 0)"
+        cell.repsLabel.text = "Reps: \(exercise?.reps ?? 0)"
+        
+        
+        
+//        if let sets = exercise?.sets {
+//        cell.detailTextLabel?.text = "Weight: \(String(describing: sets))"
+//        }
+//        if let reps = exercise?.reps {
+//            repLabel?.text = "\(String(describing: reps))"
+//        }
+//        if let weight = exercise?.weight {
+//            weightLabel?.text = "\(String(describing: weight))"
+//        }
+//
+//
+//        cell.textLabel?.text = exercise?.name
         return cell
     }
 }

@@ -33,6 +33,12 @@ class WorkoutController {
         try? context.save()
     }
     
+    func update(exercise: Exercise, to workout: Workout) {
+        context.delete(exercise)
+        workout.addToExercises(exercise)
+        try? context.save()
+    }
+    
     func delete(exercise: Exercise) {
         context.delete(exercise)
         try? context.save()
