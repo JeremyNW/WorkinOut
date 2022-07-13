@@ -9,12 +9,15 @@ import Foundation
 import UIKit
 
 extension Exercise {
-    convenience init(name: String, sets: Int, reps: Int, weight: Double) {
+    convenience init(name: String, sets: Int?, reps: Int?, weight: Double?) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         self.init(context: appDelegate.persistentContainer.viewContext)
         self.name = name
-        self.sets = Int64(sets)
-        self.reps = Int64(reps)
-        self.weight = weight
+        self.sets = Int64(sets ?? 0)
+        self.reps = Int64(reps ?? 0)
+        self.weight = weight ?? 0
     }
 }
+
+
+

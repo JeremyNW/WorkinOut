@@ -27,7 +27,7 @@ class AddExerciseViewController: UIViewController {
         workoutLottieView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         workoutLottieView.play()
         workoutLottieView.loopMode = .loop
-       
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(addExerciseButtonPressed))
     }
     
@@ -38,16 +38,23 @@ class AddExerciseViewController: UIViewController {
     @objc func addExerciseButtonPressed(_ sender: UIButton) {
         guard let name = exerciseNameTextField.text,
               !name.isEmpty,
-              let setString = setsTextField.text,
-              let sets = Int(setString),
-              let repString = repsTextField.text,
-              let reps = Int(repString),
-              let weightString = weightTextField.text,
-              let weight = Double(weightString),
               let workout = workout
         else { return }
+        let exercise = Exercise(name: name, sets: nil, reps: nil, weight: nil)
+        if let setString = setsTextField.text,
+           let sets = Int(setString) {
+            exercise.sets = Int64(sets)
+        }
+        if let repString = repsTextField.text,
+           let reps = Int(repString) {
+            exercise.reps = Int64(reps)
+        }
+        if let weightString = weightTextField.text,
+           let weight = Double(weightString) {
+            exercise.weight = weight
+        }
         
-        let exercise = Exercise(name: name, sets: sets, reps: reps, weight: weight)
+        
         WorkoutController.shared.add(exercise: exercise, to: workout)
         navigationController?.popViewController(animated: true)
     }
@@ -55,7 +62,7 @@ class AddExerciseViewController: UIViewController {
 }
 
 extension AddExerciseViewController: UITextFieldDelegate {
- 
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
