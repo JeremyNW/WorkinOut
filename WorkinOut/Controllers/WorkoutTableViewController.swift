@@ -48,7 +48,7 @@ class WorkoutTableViewController: UITableViewController {
         alert.addAction(cancelButton)
         alert.addAction(saveButton)
         
-        present(alert, animated: true)
+            present(alert, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

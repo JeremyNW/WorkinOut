@@ -39,6 +39,9 @@
 		1FA72564279743A800B8D174 /* TipTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA72563279743A800B8D174 /* TipTextViewController.swift */; };
 		1FA7256727975D1900B8D174 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1FA7256627975D1900B8D174 /* Lottie */; };
 		1FA725692797627F00B8D174 /* TrackingLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FA725682797627F00B8D174 /* TrackingLottie.json */; };
+		1FCA34BB287F32CB0040A0A1 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA34BA287F32CB0040A0A1 /* Video.storyboard */; };
+		1FCA34BE287F37150040A0A1 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA34BD287F37150040A0A1 /* VideoViewController.swift */; };
+		1FCA34C0287F3B560040A0A1 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA34BF287F3B560040A0A1 /* VideoHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		1FA72561279736B800B8D174 /* TipManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipManager.swift; sourceTree = "<group>"; };
 		1FA72563279743A800B8D174 /* TipTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTextViewController.swift; sourceTree = "<group>"; };
 		1FA725682797627F00B8D174 /* TrackingLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TrackingLottie.json; path = WorkinOut/TrackingLottie.json; sourceTree = "<group>"; };
+		1FCA34BA287F32CB0040A0A1 /* Video.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
+		1FCA34BD287F37150040A0A1 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		1FCA34BF287F3B560040A0A1 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +115,7 @@
 		1FA725262795D8B200B8D174 /* WorkinOut */ = {
 			isa = PBXGroup;
 			children = (
-				1FA7253E2795DF0A00B8D174 /* Main.storyboard */,
-				1FA7253C2795D91700B8D174 /* Tracking.storyboard */,
-				1FA7252D2795D8B200B8D174 /* Credits.storyboard */,
-				1FA725402795F38600B8D174 /* Workout.storyboard */,
-				1F6F6C0F279CDA4F00589856 /* WorkoutCreator.storyboard */,
-				1FA72559279627A800B8D174 /* AddExercise.storyboard */,
-				1FA725322795D8B300B8D174 /* LaunchScreen.storyboard */,
+				1FCA34BC287F35730040A0A1 /* Storyboards */,
 				1FA725432795F40100B8D174 /* Controllers */,
 				1FA7255427960F0000B8D174 /* Models */,
 				1FA7253B2795D8F100B8D174 /* Misc */,
@@ -138,6 +138,8 @@
 		1FA725432795F40100B8D174 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1FCA34BD287F37150040A0A1 /* VideoViewController.swift */,
+				1FCA34BF287F3B560040A0A1 /* VideoHelper.swift */,
 				1FA7255227960DEE00B8D174 /* TipTableViewController.swift */,
 				1FA72563279743A800B8D174 /* TipTextViewController.swift */,
 				1FA7255D2797279500B8D174 /* AddBodyWeightViewController.swift */,
@@ -173,6 +175,21 @@
 				1FA72561279736B800B8D174 /* TipManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1FCA34BC287F35730040A0A1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1FA7253E2795DF0A00B8D174 /* Main.storyboard */,
+				1FA72559279627A800B8D174 /* AddExercise.storyboard */,
+				1FA7252D2795D8B200B8D174 /* Credits.storyboard */,
+				1FA725322795D8B300B8D174 /* LaunchScreen.storyboard */,
+				1FA7253C2795D91700B8D174 /* Tracking.storyboard */,
+				1FA725402795F38600B8D174 /* Workout.storyboard */,
+				1F6F6C0F279CDA4F00589856 /* WorkoutCreator.storyboard */,
+				1FCA34BA287F32CB0040A0A1 /* Video.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +264,7 @@
 				1FA725692797627F00B8D174 /* TrackingLottie.json in Resources */,
 				1FA725312795D8B300B8D174 /* Assets.xcassets in Resources */,
 				1F6F6C10279CDA4F00589856 /* WorkoutCreator.storyboard in Resources */,
+				1FCA34BB287F32CB0040A0A1 /* Video.storyboard in Resources */,
 				1FA7253F2795DF0A00B8D174 /* Main.storyboard in Resources */,
 				1FA725412795F38600B8D174 /* Workout.storyboard in Resources */,
 				1F084FBF2797ACB40029687E /* WorkoutLottie.json in Resources */,
@@ -268,7 +286,9 @@
 				1F0D18412798CC72009B4284 /* WorkoutController.swift in Sources */,
 				1FA7255327960DEE00B8D174 /* TipTableViewController.swift in Sources */,
 				1F6F6C0E279B769400589856 /* WorkoutTableViewController.swift in Sources */,
+				1FCA34C0287F3B560040A0A1 /* VideoHelper.swift in Sources */,
 				1FA7255627960F1B00B8D174 /* Tip.swift in Sources */,
+				1FCA34BE287F37150040A0A1 /* VideoViewController.swift in Sources */,
 				1F0D18432798CF50009B4284 /* ExerciseExtension.swift in Sources */,
 				1F55384327A08EA10049EB20 /* WorkoutViewerViewController.swift in Sources */,
 				1F6F6C0A279B6C6500589856 /* WorkoutExtension.swift in Sources */,

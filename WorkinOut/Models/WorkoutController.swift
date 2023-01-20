@@ -20,7 +20,7 @@ class WorkoutController {
         return (try? context.fetch(request)) ?? []
     }
 
-    private init() { }
+     init() { }
     
     func createWorkout(name: String) -> Workout {
         let workout = Workout(name: name)

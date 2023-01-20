@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hyr-cc-6LD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="VideoViewController" customModule="WorkinOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XfY-MS-rra">
+                                <rect key="frame" x="0.0" y="789" width="414" height="75"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="GEz-Xa-dxX"/>
+                                </constraints>
+                                <items/>
+                            </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHq-Fa-50Q">
+                                <rect key="frame" x="12" y="746" width="390" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Record or Add Video"/>
+                                <connections>
+                                    <action selector="addVideoButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3J3-NY-GOy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PHq-Fa-50Q" secondAttribute="trailing" constant="12" id="Eo7-mU-rN8"/>
+                            <constraint firstAttribute="bottom" secondItem="XfY-MS-rra" secondAttribute="bottom" constant="32" id="WQh-Lg-qV1"/>
+                            <constraint firstItem="PHq-Fa-50Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="dvu-XW-urX"/>
+                            <constraint firstItem="XfY-MS-rra" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="vw6-CK-gBe"/>
+                            <constraint firstItem="XfY-MS-rra" firstAttribute="top" secondItem="PHq-Fa-50Q" secondAttribute="bottom" constant="12" id="xUl-Cq-yAo"/>
+                            <constraint firstAttribute="trailing" secondItem="XfY-MS-rra" secondAttribute="trailing" id="zBL-hl-2zy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sk6-W6-3xJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882.60869565217399" y="97.767857142857139"/>
+        </scene>
+        <!--Progress-->
+        <scene sceneID="ARz-mE-RxZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hyr-cc-6LD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Progress" image="camera.on.rectangle" catalog="system" selectedImage="camera.on.rectangle.fill" id="bbc-og-yZq"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="86Z-oq-0xH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="BV4-Tu-xs3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qn6-YA-Noo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.on.rectangle" catalog="system" width="128" height="96"/>
+        <image name="camera.on.rectangle.fill" catalog="system" width="128" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

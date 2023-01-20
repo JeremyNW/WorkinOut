@@ -14,7 +14,8 @@ class WorkoutCreationViewController: UIViewController {
     @IBOutlet weak var workoutCreatorTableView: UITableView!
     
     var workout: Workout?
-    
+    var exercise: Exercise?
+    var WorkoutVC = WorkoutController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +62,9 @@ extension WorkoutCreationViewController: UITableViewDataSource, UITableViewDeleg
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            workout?.removeFromExercises(at: indexPath.row)
+            let exercise = workout?.exercises?[indexPath.row]
+            WorkoutVC.delete(exercise: exercise as! Exercise)
+         //   workout?.removeFromExercises(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.left)
         }
     }
